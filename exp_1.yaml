@@ -1,0 +1,18 @@
+exp_name: exp_1             # Experiment name.
+
+# nvidia-smi | grep 'python' | awk '{ print $3 }' | xargs -n1 kill -9
+
+# Optimization options
+epoch: 300                       # Maximum number of training epochs.
+batch_size: 32                      # Batch size in training (Classification).
+num_workers : 4
+
+# Path and directory
+Train : /home/mmlab206/datasets/芒果/train
+train_txt : _
+Test : /home/mmlab206/Desktop/test_noperson
+test_txt : /home/mmlab206/Desktop/test_example.csv
+Val : /home/mmlab206/datasets/芒果/val
+val_txt : '/home/mmlab206/datasets/芒果/dev.csv'
+
+class2idx : {'A': 0, 'B': 1, 'C': 2}
